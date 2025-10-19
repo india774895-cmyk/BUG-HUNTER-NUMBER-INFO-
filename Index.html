@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BUG HUNTER NUMBER INFO</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1 class="logo">BUG HUNTER NUMBER INFO</h1>
+
+    <section class="card">
+      <label for="number">Enter phone number</label>
+      <div class="input-row">
+        <input id="number" placeholder="e.g. +919876543210 or 09876543210" />
+        <button id="lookup">Lookup</button>
+      </div>
+      <p class="hint">Example formats: +91XXXXXXXXXX, 0XXXXXXXXXX, XXXXXXXXXX</p>
+
+      <div id="result" class="result hidden">
+        <h2>Result</h2>
+        <div class="row"><strong>Number:</strong> <span id="r-number"></span></div>
+        <div class="row"><strong>Country:</strong> <span id="r-country"></span></div>
+        <div class="row"><strong>Type:</strong> <span id="r-type"></span></div>
+        <div class="row"><strong>Operator:</strong> <span id="r-operator"></span></div>
+        <div class="row"><strong>Region:</strong> <span id="r-region"></span></div>
+        <div class="row"><strong>Notes:</strong> <span id="r-notes"></span></div>
+      </div>
+
+      <div id="error" class="error hidden"></div>
+    </section>
+
+    <footer>BUG HUNTER NUMBER INFO • Deploy on Vercel</footer>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
